@@ -1,0 +1,12 @@
+{
+    "presets":[ "@babel/env","@babel/react","@babel/typescript"],
+    "plugins": [
+          
+        "@babel/proposal-object-rest-spread",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/proposal-class-properties",{"legacy":true}],
+    
+        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+      ]
+}
+//这里定义一处
