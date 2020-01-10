@@ -1,4 +1,4 @@
-# tailwindApp
-npm install
-npm run build
-npm run dev
+# tailwindApp 
+## npm install 
+## npm run build 
+## npm run dev 
