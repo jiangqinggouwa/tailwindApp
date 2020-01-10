@@ -3,7 +3,8 @@ import { StoreState } from './redux/store'
 import { connect } from './models/ReactReduxConnect'
 import { TestState } from './redux/reducer/test/test.state'
 import { Dispatch } from 'redux'
-import './assets/css/main.css'
+import './assets/css/style.css'
+import './assets/css/link.css'
 
 
 // @connect((state: StoreState) => ({state:state.TestReducer}))
@@ -43,17 +44,15 @@ class App extends React.Component{
     }
     render(){
       return(
-        <div>
-          <p className="font-hairline ...">The quick brown fox ...</p>
-          <p className="font-thin ...">The quick brown fox ...</p>
-          <p className="font-light ...">The quick brown fox ...</p>
-          <p className="font-normal ...">The quick brown fox ...</p>
-          <p className="font-medium ...">The quick brown fox ...</p>
-          <p className="font-semibold ...">The quick brown fox ...</p>
-          <p className="font-bold ...">The quick brown fox ...</p>
-          <p className="font-extrabold ...">The quick brown fox ...</p>
-          <p className="font-black ...">The quick brown fox ...</p>
-        </div>      
+        <div className="">
+          <button className="text-blue-600 hover:text-red-600 ...">
+            Button
+          </button>
+          <div className="red"></div>
+          <button>
+            Button2222
+          </button>
+      </div>   
       )  
     }
 }
